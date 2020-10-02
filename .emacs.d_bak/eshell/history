@@ -1,0 +1,28 @@
+l
+ls
+ll
+cd ../Documents/workspace/go/moppo/new-wscrm-api
+ls 
+go mod init
+pwd 
+go mod init
+go run main.go 
+go build && install
+go build && install
+go build 
+go install
+gocode set
+ls ~/go
+ls ~/go/pkg
+ls ~/go/pkg/darwin_amd64/moppo.com
+ls
+gocode set lib-path=""
+gocode set
+gocode set lib-path
+gocode set
+go get -u github.com/mdempsky/gocode
+go build
+go install
+ls ~/go/pkg/
+ls ~/go/pkg/darwin_amd64/moppo.com
+ll ~/go/pkg/darwin_amd64/moppo.com
