@@ -1,25 +1,33 @@
 
 ;; ----- smex-history -----
 (
- package-refresh-contents
- package-list-packages
- package-install
+ load-file
  eshell
- bookmark-rename
- bookmark-save
- bookmark-set
+ exec-path-from-shell-initialize
+ package-install
+ go-mode
+ package-delete
+ package-list-packages
 )
 
 ;; ----- smex-data -----
 (
- (package-list-packages . 2)
+ (package-list-packages . 4)
  (locate . 1)
- (load-file . 10)
- (eshell . 6)
+ (load-file . 37)
+ (eshell . 9)
  (customize-variable . 1)
  (bookmark-set . 2)
  (bookmark-save . 2)
- (package-install . 5)
+ (package-install . 7)
  (bookmark-rename . 3)
  (package-refresh-contents . 1)
+ (package-reinstall . 2)
+ (lsp-modeline-diagnostics-mode . 1)
+ (lsp-restart-workspace . 1)
+ (package-delete . 4)
+ (getenv . 3)
+ (lsp-mode . 3)
+ (go-mode . 2)
+ (exec-path-from-shell-initialize . 1)
 )

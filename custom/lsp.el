@@ -51,13 +51,4 @@
 (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 (use-package lsp-treemacs :commands lsp-treemacs-errors-list)
 
-(use-package dap-mode
-  :diminish
-  :hook ((lsp-mode . dap-mode)
-         (dap-mode . dap-ui-mode)
-	 (dap-mode . dap-tooltip-mode)
-         ;;(python-mode . (lambda() (require 'dap-python)))
-         ;;(go-mode . (lambda() (require 'dap-go)))
-         ;;(java-mode . (lambda() (require 'dap-java)))))
-
 (provide 'lsp)

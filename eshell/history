@@ -26,3 +26,27 @@ go install
 ls ~/go/pkg/
 ls ~/go/pkg/darwin_amd64/moppo.com
 ll ~/go/pkg/darwin_amd64/moppo.com
+cd 
+cd /usr/local/go/bin
+ls
+ll
+ps -ef|grep gopls
+ls 
+cd .emacs.d
+ls
+cd custom/
+ls
+ll
+l
+ls
+rm -rf  init-const.el init-custom.el 
+rm -rf init-funcs.el init-lsp-go.el init-lsp.el 
+ll
+ll
+ls
+clear
+git-commit-setup 
+git
+clear 
+ls 
+go

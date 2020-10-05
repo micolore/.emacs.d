@@ -43,7 +43,7 @@
     ("99ea831ca79a916f1bd789de366b639d09811501e8c092c85b2cb7d697777f93" "711efe8b1233f2cf52f338fd7f15ce11c836d0b6240a18fffffc2cbd5bfe61b0" "be9645aaa8c11f76a10bcf36aaf83f54f4587ced1b9b679b55639c87404e2499" "f7216d3573e1bd2a2b47a2331f368b45e7b5182ddbe396d02b964b1ea5c5dc27" "c4bdbbd52c8e07112d1bfd00fee22bf0f25e727e95623ecb20c4fa098b74c1bd" "f2927d7d87e8207fa9a0a003c0f222d45c948845de162c885bf6ad2a255babfd" "57e3f215bef8784157991c4957965aa31bac935aca011b29d7d8e113a652b693" "e6ff132edb1bfa0645e2ba032c44ce94a3bd3c15e3929cdf6c049802cf059a2a" "f2c35f8562f6a1e5b3f4c543d5ff8f24100fae1da29aeb1864bbc17758f52b70" default)))
  '(package-selected-packages
    (quote
-    (go-tag go-gen-test go-impl afternoon-theme rainbow-delimiters zenburn-theme inkpot-theme auto-complete guru-mode yasnippet-snippets go-rename go-guru go-eldoc company-go go-mode doom-themes company flycheck-golangci-lint go-fill-struct lsp-ivy org-bullets lsp-mode smex org-journal deft ivy-dired-history rg yasnippet counsel swiper ivy projectile dashboard ace-window ripgrep use-package magit))))
+    (go-dlv go-playground go-tag go-gen-test go-impl afternoon-theme rainbow-delimiters zenburn-theme inkpot-theme auto-complete guru-mode yasnippet-snippets go-rename go-guru go-eldoc go-mode doom-themes company flycheck-golangci-lint go-fill-struct lsp-ivy org-bullets lsp-mode smex org-journal deft ivy-dired-history rg yasnippet counsel swiper ivy projectile dashboard ace-window ripgrep use-package magit))))
 
 ;; theme by package 
 ;;(load-theme 'afternoon)
@@ -254,6 +254,14 @@
 ;;  (global-flycheck-mode t)
 ;;  )
 
+;;
+;; 带中文注释带补全助手
+;; https://github.com/manateelazycat/company-english-helper
+;; https://emacs-china.org/t/company/6322
+;;
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/elisp"))
+(require 'company-english-helper)
+
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -262,9 +270,8 @@
  ;; If there is more than one, they won't work right.
  '(aw-leading-char-face ((t (:inherit ace-jump-face-foreground :height 3.0)))))
 
-
-(load "~/.emacs.d/custom/lsp.el")
-(load "~/.emacs.d/custom/lsp-go.el")
+;;(load "~/.emacs.d/custom/lsp.el")
+;;(load "~/.emacs.d/custom/lsp-go.el")
 ;; by gocode
 ;;(load "~/.emacs.d/custom/go.el") 
 
