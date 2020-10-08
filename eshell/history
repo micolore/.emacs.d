@@ -50,3 +50,6 @@ git
 clear 
 ls 
 go
+git add .
+git commit -m 'add bind key'
+git push origin main
