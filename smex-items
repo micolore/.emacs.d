@@ -2,19 +2,19 @@
 ;; ----- smex-history -----
 (
  load-file
+ company-english-helper-search
  eshell
  exec-path-from-shell-initialize
  package-install
  go-mode
  package-delete
- package-list-packages
 )
 
 ;; ----- smex-data -----
 (
  (package-list-packages . 4)
  (locate . 1)
- (load-file . 37)
+ (load-file . 38)
  (eshell . 9)
  (customize-variable . 1)
  (bookmark-set . 2)
@@ -30,4 +30,5 @@
  (lsp-mode . 3)
  (go-mode . 2)
  (exec-path-from-shell-initialize . 1)
+ (company-english-helper-search . 1)
 )

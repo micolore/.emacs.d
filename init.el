@@ -261,7 +261,8 @@
 ;;
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/elisp"))
 (require 'company-english-helper)
-
+;; toggle-company-english-helper
+(global-set-key (kbd "C-o") 'toggle-company-english-helper)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -274,5 +275,3 @@
 ;;(load "~/.emacs.d/custom/lsp-go.el")
 ;; by gocode
 ;;(load "~/.emacs.d/custom/go.el") 
-
-
